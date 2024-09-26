@@ -1,0 +1,166 @@
+body {
+    background-color: #0C0C0C;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.section_1 {
+    height: auto; 
+    padding: 20px; 
+}
+
+.totoro_card {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+}
+
+.totoro_image img {
+    max-width: 100%; 
+    height: auto; 
+    max-height: 600px; 
+}
+
+.section_1 h1 {
+    color: white;
+    margin: 0;
+    font-size: 5vw; 
+    text-align: left;
+    font-weight: 900;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.line2 {
+    padding-top: 30px;
+}
+
+.content_container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.aboutme_card1, .aboutme_card2, .aboutme_card3 {
+    padding: 20px;
+    border: 2px solid #282828;
+    border-radius: 8px;
+    margin: 20px;
+    width: 300px; 
+    flex: 1 1 auto; 
+    max-width: calc(33.33% - 40px); 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.aboutme_card1:hover, 
+.aboutme_card2:hover, 
+.aboutme_card3:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.aboutme_card1:hover .aboutme_heading1, 
+.aboutme_card2:hover .aboutme_heading2, 
+.aboutme_card3:hover .aboutme_heading3, 
+.aboutme_card1:hover p, 
+.aboutme_card2:hover p, 
+.aboutme_card3:hover p {
+    color: white; 
+}
+
+.aboutme_heading1, .aboutme_heading2, .aboutme_heading3 {
+    font-size: 30px;
+    color: #282828; 
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #282828; 
+}
+
+.section_2 {
+    height: auto; 
+    padding: 20px; 
+}
+
+.music_heading {
+    font-size: 5vw; 
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.music_flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.musicbox {
+    border-radius: 10px;
+    width: 250px; 
+    height: 300px; 
+    margin: 10px;
+    border: #444 solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.musicbox img {
+    max-width: 100%;
+    height: auto;
+}
+
+audio {
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.musicbox img {
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .musicbox {
+        width: 100%; 
+        max-width: 300px; 
+    }
+
+    .section_1 h1 {
+        font-size: 4rem; 
+    }
+
+    .music_heading {
+        font-size: 4rem; 
+    }
+
+    .aboutme_card1, .aboutme_card2, .aboutme_card3 {
+        max-width: 90%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section_1 h1 {
+        font-size: 3rem; 
+    }
+
+    .music_heading {
+        font-size: 3rem; 
+    }
+}
